@@ -2,11 +2,12 @@ import { Company } from "../Models/company.js";
 
 export const createCompany = async (req,res)=>{
 
-    const {name} = req.body;
+    const { name, imgUrl } = req.body;
    
   await Company.create({
-       name
-    })
+    name,
+    imgUrl,
+  });
 
     res.status(201).json({
         success:true,

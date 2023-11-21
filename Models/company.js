@@ -7,6 +7,9 @@ const companySchema = new mongoose.Schema({
   //     ref:"User", // Schema name,
   //     require:true
   // },
+  imgUrl: {
+    type:String
+  },
   ratings: [{ type: Number }],
   createdAt: {
     type: Date,
